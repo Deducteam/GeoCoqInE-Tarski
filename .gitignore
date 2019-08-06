@@ -1,0 +1,34 @@
+*.annot
+*.cmo
+*.cma
+*.cmi
+*.cmt
+*.cmti
+*.a
+*.o
+*.cmx
+*.cmxs
+*.cmxa
+*.glob
+*.vo
+*.d
+*.depend
+.merlin
+
+*.dko
+
+_build
+config.v
+
+# emacs tmp files
+*~
+*#
+
+CoqMakefile
+
+# Generated .aux files
+*.aux
+
+# Debugging files
+*.out
+*.conf
