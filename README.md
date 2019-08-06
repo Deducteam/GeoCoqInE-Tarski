@@ -1,4 +1,4 @@
-USER MANUAL FOR GEOCOQINE-EUCLID
+USER MANUAL FOR GEOCOQINE-TARSKI
 ======================================
 
 ### INSTALLATION
@@ -26,7 +26,7 @@ git clone https://github.com/Deducteam/Dedukti.git <dedukti-path>
 cd <dedukti-path>
 make install
 
-git clone --recursive https://github.com/Deducteam/GeoCoqInE-Euclid.git <coqine-path>
+git clone --recursive https://github.com/Deducteam/GeoCoqInE-Tarski.git <coqine-path>
 cd <coqine-path>
 
 <edit .coqrc file with current path>
