@@ -11,9 +11,6 @@ Dedukti Set Debug "_build/debug.out".
 
 Dedukti Set Encoding "polymorph".
 
-Dedukti Filter Out "Coq.Init.Logic.rew_ex".
-Dedukti Filter Out "Coq.Init.Logic.rew_ex2".
-
 Dedukti Enable Failproofmode.
 
 Dedukti Enable Verbose.
