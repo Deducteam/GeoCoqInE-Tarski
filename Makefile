@@ -9,7 +9,7 @@ BUILD_FOLDER = _build
 OUTFOLDER    = $(BUILD_FOLDER)/out
 PRUNEDFOLDER = $(BUILD_FOLDER)/pruned
 
-ENCODING=predicates_eta
+ENCODING=predicates_eta_fix
 
 COQINEPATH=coqine
 
