@@ -3,6 +3,7 @@ COQ_MAKEFILE ?= coq_makefile
 COQC         ?= coqc
 DKCHECK      ?= dkcheck
 DKDEP        ?= dkdep
+DKPRUNE      ?= dkprune
 VERBOSE      ?=
 
 BUILD_FOLDER = _build
@@ -36,7 +37,7 @@ $(BUILD_FOLDER)/config.dk: generate | $(BUILD_FOLDER) $(OUTFOLDER)
 	ls $(OUTFOLDER)/*GeoCoq*.dk | sed -e "s:$(OUTFOLDER)/Top__:#REQUIRE Top__:g" | sed -e "s/.dk/./g" > $(BUILD_FOLDER)/config.dk
 
 prune: generate $(BUILD_FOLDER)/C.dk $(BUILD_FOLDER)/config.dk | $(PRUNEDFOLDER) $(OUTFOLDER)
-	dkprune -l -I $(BUILD_FOLDER) -I $(OUTFOLDER) -o $(PRUNEDFOLDER) $(BUILD_FOLDER)/config.dk
+	$(DKPRUNE) -l -I $(BUILD_FOLDER) -I $(OUTFOLDER) -o $(PRUNEDFOLDER) $(BUILD_FOLDER)/config.dk
 	rm -f $(PRUNEDFOLDER)/C.dk
 
 CoqMakefile: Make
