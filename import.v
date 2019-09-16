@@ -26,3 +26,4 @@ Require Import GeoCoq.Utils.sets.
 Require Import GeoCoq.Tactics.Coinc.ColR.
 Require Import GeoCoq.Tarski_dev.Tactics.ColR.
 Require Import GeoCoq.Tarski_dev.Ch07_midpoint.
+Require Import GeoCoq.Tarski_dev.Ch08_orthogonality.

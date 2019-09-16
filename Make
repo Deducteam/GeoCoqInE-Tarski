@@ -36,3 +36,4 @@ GeoCoq/Utils/TCSets.v
 GeoCoq/Tactics/Coinc/ColR.v
 GeoCoq/Tarski_dev/Tactics/ColR.v
 GeoCoq/Tarski_dev/Ch07_midpoint.v
+GeoCoq/Tarski_dev/Ch08_orthogonality.v
