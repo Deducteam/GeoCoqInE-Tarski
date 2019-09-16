@@ -49,7 +49,6 @@ $(BUILD_FOLDER)/C.dk: | $(BUILD_FOLDER)
 config.v:
 	make -C $(COQINEPATH)/encodings _build/$(ENCODING)/C.config
 	cp $(COQINEPATH)/encodings/_build/$(ENCODING)/C.config config.v
-	echo "Dedukti Set Param \"syntax\" \"Dedukti\"." >> config.v
 
 # Generate the dependencies of [.dk] files
 depend: prune | $(PRUNEDFOLDER) $(BUILD_FOLDER)

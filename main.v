@@ -9,7 +9,10 @@ Dedukti Set Destination "_build/out".
 Dedukti Enable Debug.
 Dedukti Set Debug "_build/debug.out".
 
-Dedukti Set Encoding "polymorph".
+Dedukti Set Param "tpolymorphism" "true".
+Dedukti Set Param "upolymorphism" "true".
+Dedukti Set Param "constraints"   "true".
+Dedukti Set Param "encoding_name" "enc".
 
 Dedukti Enable Failproofmode.
 
