@@ -32,3 +32,7 @@ CoqMakefile
 # Debugging files
 *.out
 *.conf
+
+# Saves of successful exports
+*.zip
+*.tar.gz

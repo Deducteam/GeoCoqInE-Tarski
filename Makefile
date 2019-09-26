@@ -17,7 +17,7 @@ DKS = $(wildcard $(PRUNEDFOLDER)/*.dk)
 DKOS = $(DKS:.dk=.dko)
 
 
-.PHONY: all coqine compile generate depend prune check clean fullclean
+.PHONY: all check clean fullclean
 
 all: coqine compile generate prune check
 
