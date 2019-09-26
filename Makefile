@@ -19,9 +19,9 @@ DKOS = $(DKS:.dk=.dko)
 
 .PHONY: all check clean fullclean
 
-all: coqine compile generate prune check
+all: compile generate prune check
 
-coqine:
+$(COQINEPATH)/.coqrc:
 	make -C $(COQINEPATH)
 
 # Compile the local [.v] files that are not part of the stdlib
@@ -29,7 +29,7 @@ compile: CoqMakefile
 	make -f CoqMakefile
 
 # Generate the [.dk] files by executing [main.v]
-generate: coqine compile config.v | $(OUTFOLDER) $(PRUNEDFOLDER) $(BUILD_FOLDER)
+generate: $(COQINEPATH)/.coqrc compile config.v | $(OUTFOLDER) $(PRUNEDFOLDER) $(BUILD_FOLDER)
 	$(COQC) -init-file $(COQINEPATH)/.coqrc -w all -R . Top -R $(COQINEPATH)/src Coqine main.v
 
 $(BUILD_FOLDER)/config.dk: generate | $(BUILD_FOLDER) $(OUTFOLDER)
