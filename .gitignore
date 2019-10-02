@@ -36,3 +36,5 @@ CoqMakefile
 # Saves of successful exports
 *.zip
 *.tar.gz
+
+out.txt
