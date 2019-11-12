@@ -13,6 +13,9 @@ Dedukti Set Param "tpolymorphism" "true".
 Dedukti Set Param "upolymorphism" "true".
 Dedukti Set Param "constraints"   "true".
 Dedukti Set Param "encoding_name" "enc".
+(*
+Dedukti Set Param "unfold_letin" "true".
+ *)
 
 Dedukti Enable Failproofmode.
 
