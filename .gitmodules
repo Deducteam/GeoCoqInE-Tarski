@@ -3,5 +3,4 @@
 	url = https://github.com/Deducteam/CoqInE.git
 [submodule "GeoCoq"]
 	path = GeoCoq
-	url = https://github.com/GeoCoq/GeoCoq.git
-    branch = faster-coincr
+	url = https://github.com/Deducteam/GeoCoqInE.git
