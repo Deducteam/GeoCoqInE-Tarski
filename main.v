@@ -10,6 +10,7 @@ Dedukti Enable Debug.
 Dedukti Set Debug "_build/debug.out".
 
 Dedukti Set Param "tpolymorphism" "true".
+Dedukti Set Param "tpoly_cons"    "true".
 Dedukti Set Param "upolymorphism" "true".
 Dedukti Set Param "constraints"   "true".
 Dedukti Set Param "encoding_name" "enc".
