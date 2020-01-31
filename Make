@@ -27,6 +27,7 @@ GeoCoq/Tarski_dev/Ch03_bet.v
 GeoCoq/Tactics/Coinc/CongR.v
 GeoCoq/Meta_theory/Models/tarski_to_cong_theory.v
 GeoCoq/Tarski_dev/Tactics/CongR.v
+GeoCoq/CoincR.v
 GeoCoq/Tarski_dev/Ch04_cong_bet.v
 GeoCoq/Tarski_dev/Ch04_col.v
 GeoCoq/Meta_theory/Decidability/equivalence_between_decidability_properties_of_basic_relations.v
