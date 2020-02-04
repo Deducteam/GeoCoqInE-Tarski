@@ -1,4 +1,5 @@
 (* Small sample to check Makefile *)
+
 (*
 Require Import GeoCoq.Utils.general_tactics.
 Require Import GeoCoq.Axioms.tarski_axioms.

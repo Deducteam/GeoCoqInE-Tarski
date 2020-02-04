@@ -17,11 +17,11 @@ DKS = $(wildcard $(PRUNEDFOLDER)/*.dk)
 DKOS = $(DKS:.dk=.dko)
 
 
-.PHONY: all check clean fullclean
+.PHONY: all check clean fullclean coqine compile
 
-all: compile generate prune check
+all: generate prune check
 
-$(COQINEPATH)/.coqrc:
+coqine:
 	make -C $(COQINEPATH)
 
 # Compile the local [.v] files that are not part of the stdlib
@@ -29,8 +29,8 @@ compile: CoqMakefile
 	make -f CoqMakefile
 
 # Generate the [.dk] files by executing [main.v]
-generate: $(COQINEPATH)/.coqrc compile config.v | $(OUTFOLDER) $(PRUNEDFOLDER) $(BUILD_FOLDER)
-	$(COQC) -init-file $(COQINEPATH)/.coqrc -w all -R . Top -R $(COQINEPATH)/src Coqine main.v
+generate: coqine compile config.v | $(OUTFOLDER) $(PRUNEDFOLDER) $(BUILD_FOLDER)
+	$(COQC) -nois -verbose -R . Top -Q $(COQINEPATH)/src/ Coqine -I $(COQINEPATH)/src/ main.v
 
 $(BUILD_FOLDER)/config.dk: generate | $(BUILD_FOLDER) $(OUTFOLDER)
 	ls $(OUTFOLDER)/*GeoCoq*.dk | sed -e "s:$(OUTFOLDER)/Top__:#REQUIRE Top__:g" | sed -e "s/.dk/./g" > $(BUILD_FOLDER)/config.dk
